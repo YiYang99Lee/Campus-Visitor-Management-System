@@ -112,7 +112,7 @@ class Staff {
 			console.log(compare)
 			if(compare == true){
 				console.log("Login Successfully");
-				// TODO: Return user objects
+				// TODO: Return user object
 				await staffs.find({"username": username}).toArray().then(res => {console.log(res)})
 				return ("Login Successfully");
 			}else{
