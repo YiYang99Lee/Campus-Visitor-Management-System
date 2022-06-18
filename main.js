@@ -1,8 +1,8 @@
 const jwt = require("jsonwebtoken");
 const MongoClient = require("mongodb").MongoClient;
 const User = require("./user");//calling the function we created in user.js as library
-const Staff = require("./staff");
-const Student = require("./student");
+const Staff = require("./staff");//calling the fuction we created in staff.js as library
+const Student = require("./student");//calling the function we created in student.js as library
 
 function generateToken(payload) {
   return jwt.sign(payload, "secret", { expiresIn: "100y" });
