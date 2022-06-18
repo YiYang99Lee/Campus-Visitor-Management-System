@@ -79,7 +79,7 @@ test("Staff delete successfully", async () => {//test for successful update
 	expect(res).toBe("Data with the username is deleted")
 })
 
-/////////////////////////////////////////////////Student/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////Student//////////////////////////////////////////////////////////////
 test("Student register successfully", async () => {//test for successful update
 	const res = await Student.register("user12396", "987654", "home","school","2h","4am","4pm","-")
 	expect(res).toBe("Register Successfully")
