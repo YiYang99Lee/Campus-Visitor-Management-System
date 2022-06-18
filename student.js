@@ -5,7 +5,7 @@ let students;
 
 class Student {
 	static async injectDB(conn) {
-		students = await conn.db("Assignment").collection("students")
+		students = await conn.db("Assignment").collection("students")//
 	}
 
 	/**
